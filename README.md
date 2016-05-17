@@ -1,6 +1,83 @@
 create-dmg
 ==========
 
+간단한 스크립트로 DMG 파일을 만들 수 있습니다.
+이 소스는 [andreyvit/create-dmg](https://github.com/andreyvit/create-dmg) 의 forked 버전입니다.
+
+거의 개인용으로 사용중이기에 추가 설명이 필요하면 
+
+[ImageMagick 다운로드] (http://www.imagemagick.org/script/binary-releases.php)
+
+##1) ImageMagick 를 사용해서 기본 이미지에 년월일 정보를 추가해서 새로운 이미지를 만들어내고
+
+설치용 배경이미지 생성(Applications 용 화살표 이미지 없음)
+```bash
+convert -font "/System/Library/Fonts/Helvetica.dfont" \
+-fill white \
+-draw "rectangle 30,1000 270,1040" \
+-fill black \
+-pointsize 24 \
+-draw "text 40,1030 '$(date '+%Y/%m/%d %H:%M:%S')'" \
+"${HOME}/Downloads/0000-DMG/background/background-001.png" \
+"${HOME}/Downloads/0000-DMG/background/background-now.png"
+```
+
+복사용 배경이미지 생성
+```bash
+convert -font "/System/Library/Fonts/Helvetica.dfont" \
+-fill white \
+-draw "rectangle 30,1000 270,1040" \
+-fill black \
+-pointsize 24 \
+-draw "text 40,1030 '$(date '+%Y/%m/%d %H:%M:%S')'" \
+"${HOME}/Downloads/0000-DMG/background/background-002.png" \
+"${HOME}/Downloads/0000-DMG/background/background-now.png"
+```
+
+##2) create-dmg 로 배경과 아이콘, 앱 등을 설정해서 dmg 이미지를 생성합니다.
+
+설치용 dmg 생성
+```bash
+create-dmg \
+--volname "Little Snitch 3.6.3" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Little Snitch 3.6.3/Little Snitch Installer.app/Contents/Resources/Little Snitch Installer.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "serial.txt" 650 100 \
+--hide-extension "serial.txt" \
+--icon "Little Snitch Installer.app" 300 400 \
+--hide-extension "Little Snitch Installer.app" \
+--icon "Little Snitch Uninstaller.app" 120 400 \
+--hide-extension "Little Snitch Uninstaller.app" \
+"${HOME}/Downloads/Little Snitch 3.6.3 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Little Snitch 3.6.3"
+```
+
+복사용 dmg 생성
+```bash
+create-dmg \
+--volname "VMware Fusion 8.1.1" \
+--volicon "/Users/kiros33/Downloads/0001-Done/VMware Fusion 8.1.1/VMware Fusion.app/Contents/Resources/fusion.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "VMware Fusion.app" 650 100 \
+--hide-extension "VMware Fusion.app" \
+--icon "VMware Pro 8 [K]" 120 400 \
+--hide-extension "VMware Pro 8 [K]" \
+--icon "unlocker208.zip" 300 400 \
+--hide-extension "unlocker208.zip" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/VMware Fusion 8.1.1 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/VMware Fusion 8.1.1"
+```
+
+아래는 원본 github의 설명입니다.
+------------------------------
+
 A shell script to build fancy DMGs.  
 
 
