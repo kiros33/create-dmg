@@ -1,0 +1,441 @@
+
+설치용
+
+convert -font "/System/Library/Fonts/Helvetica.dfont" -fill white -draw "rectangle 30,1000 270,1040" -fill black -pointsize 24 -draw "text 40,1030 '$(date '+%Y/%m/%d %H:%M:%S')'" "${HOME}/Downloads/0000-DMG/background/background-001.png" "${HOME}/Downloads/0000-DMG/background/background-now.png"
+
+복사용
+
+convert -font "/System/Library/Fonts/Helvetica.dfont" -fill white -draw "rectangle 30,1000 270,1040" -fill black -pointsize 24 -draw "text 40,1030 '$(date '+%Y/%m/%d %H:%M:%S')'" "${HOME}/Downloads/0000-DMG/background/background-002.png" "${HOME}/Downloads/0000-DMG/background/background-now.png"
+
+create-dmg \
+--volname "BetterZip 3.1" \
+--volicon "${HOME}/Downloads/0001-Done/BetterZip 3.1/BetterZip.app/Contents/Resources/BetterZip.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon BetterZip.app 650 100 \
+--hide-extension BetterZip.app \
+--icon "CORE Keygen.app" 120 400 \
+--hide-extension "CORE Keygen.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/BetterZip 3.1 [K].dmg" \
+"${HOME}/Downloads/0001-Done/BetterZip 3.1/"
+
+------------------------------
+
+create-dmg \
+--volname "Path Finder 7.3.1" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Path Finder 7.3.1/Path Finder.app/Contents/Resources/PathFinder.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "Path Finder.app" 650 100 \
+--hide-extension "Path Finder.app" \
+--icon "Path Finder 7.x [SP].app" 120 400 \
+--hide-extension "Path Finder 7.x [SP].app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Path Finder 7.3.1 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Path Finder 7.3.1"
+
+------------------------------
+
+create-dmg \
+--volname "PNG mini 2.0.0" \
+--volicon "/Users/kiros33/Downloads/0001-Done/PNG mini 2.0.0/PNG mini.app/Contents/Resources/icon.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "PNG mini.app" 650 100 \
+--hide-extension "PNG mini.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/PNG mini 2.0.0 [K'ed].dmg" \
+"/Users/kiros33/Downloads/0001-Done/PNG mini 2.0.0"
+
+------------------------------
+
+create-dmg \
+--volname "Alfred 2.8.2" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Alfred 2.8.2/Alfred 2.app/Contents/Resources/appicon.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "Alfred 2.app" 650 100 \
+--hide-extension "Alfred 2.app" \
+--icon "Alfred 2 2.x [SP].app" 120 400 \
+--hide-extension "Alfred 2 2.x [SP].app" \
+--icon "CORE Keygen.app" 300 400 \
+--hide-extension "CORE Keygen.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Alfred 2.8.2 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Alfred 2.8.2"
+
+------------------------------
+
+create-dmg \
+--volname "CCleaner for Mac 1.11.336" \
+--volicon "/Users/kiros33/Downloads/0001-Done/CCleaner for Mac 1.11.336/CCleaner.app/Contents/Resources/c.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "CCleaner.app" 650 100 \
+--hide-extension "CCleaner.app" \
+--icon "CORE Keygen.app" 120 400 \
+--hide-extension "CORE Keygen.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/CCleaner for Mac 1.11.336 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/CCleaner for Mac 1.11.336"
+
+------------------------------
+
+create-dmg \
+--volname "GoodSync for Mac 5.2.9" \
+--volicon "/Users/kiros33/Downloads/0001-Done/GoodSync for Mac 5.2.9/GoodSync.app/Contents/Resources/goodsync.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "GoodSync.app" 650 100 \
+--hide-extension "GoodSync.app" \
+--icon "Uninstall.pkg" 120 400 \
+--hide-extension "Uninstall.pkg" \
+--icon "keygen-MESMERiZE.exe" 300 400 \
+--hide-extension "keygen-MESMERiZE.exe" \
+--icon "keygen-TSZ.exe" 480 400 \
+--hide-extension "keygen-TSZ.exe" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/GoodSync for Mac 5.2.9 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/GoodSync for Mac 5.2.9"
+
+------------------------------
+
+create-dmg \
+--volname "GoodSync2Go for Mac 5.2.9" \
+--volicon "/Users/kiros33/Downloads/0000-DMG/icons/goodsync.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "GoodSync2Go.pkg" 650 100 \
+--hide-extension "GoodSync2Go.pkg" \
+--icon "keygen-MESMERiZE.exe" 120 400 \
+--hide-extension "keygen-MESMERiZE.exe" \
+--icon "keygen-TSZ.exe" 300 400 \
+--hide-extension "keygen-TSZ.exe" \
+"${HOME}/Downloads/GoodSync2Go for Mac 5.2.9 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/GoodSync2Go for Mac 5.2.9"
+
+------------------------------
+
+create-dmg \
+--volname "Sublime Text 3 Build 3103" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Sublime Text 3 Build 3103/Sublime Text.app/Contents/Resources/Sublime Text.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "Sublime Text.app" 650 100 \
+--hide-extension "Sublime Text.app" \
+--icon "Sublime Text 3.x [SP].app" 120 400 \
+--hide-extension "Sublime Text 3.x [SP].app" \
+--icon "Sublime Text.app.zip" 300 400 \
+--hide-extension "Sublime Text.app.zip" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Sublime Text 3 Build 3103 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Sublime Text 3 Build 3103/"
+
+------------------------------
+
+create-dmg \
+--volname "Beyond Compare 4.1.3 Build 20814" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Beyond Compare 4.1.3/Beyond Compare.app/Contents/Resources/Beyond Compare.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "Beyond Compare.app" 650 100 \
+--hide-extension "Beyond Compare.app" \
+--icon "Beyond Compare 4.x [SP].app" 120 400 \
+--hide-extension "Beyond Compare 4.x [SP].app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Beyond Compare 4.1.3 Build 20814 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Beyond Compare 4.1.3/"
+
+------------------------------
+
+create-dmg \
+--volname "SQLPro for MSSQL 1.0.25f" \
+--volicon "/Users/kiros33/Downloads/0001-Done/SQLPro for MSSQL 1.0.25f/SQLPro for MSSQL.app/Contents/Resources/AppIcon.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "SQLPro for MSSQL.app" 650 100 \
+--hide-extension "SQLPro for MSSQL.app" \
+--icon "Team NOY Keygen.app" 120 400 \
+--hide-extension "Team NOY Keygen.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/SQLProMSSQL.1.0.25f [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/SQLPro for MSSQL 1.0.25f/"
+
+------------------------------
+
+create-dmg \
+--volname "NetDrive for Mac 2.7.0 Dev 293" \
+--volicon "/Users/kiros33/Dropbox/Sync/Document/0000-DMG/icons/NetDrive2.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "NetDrive.pkg" 650 100 \
+--hide-extension "NetDrive.pkg" \
+--icon "uninstall" 120 400 \
+--hide-extension "uninstall" \
+--icon "crack" 300 400 \
+--hide-extension "crack" \
+"${HOME}/Downloads/NetDrive for Mac 2.7.0 Dev 293 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/netdrive.net/NetDrive for Mac/NetDrive for Mac 2.7.0 Dev 293/"
+
+------------------------------
+
+create-dmg \
+--volname "1Password 6.0.2" \
+--volicon "/Users/kiros33/Downloads/0001-Done/1Password 6.0.2/1Password 6.app/Contents/Resources/app-icon-round.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "1Password 6.app" 650 100 \
+--hide-extension "1Password 6.app" \
+--icon "DavidWilliamson-500b273c-1eb5-466c-a45a-7ce877a14d4f-1.onepassword-license" 120 400 \
+--hide-extension "DavidWilliamson-500b273c-1eb5-466c-a45a-7ce877a14d4f-1.onepassword-license" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/1Password 6.0.2 [K'ed].dmg" \
+"/Users/kiros33/Downloads/0001-Done/1Password 6.0.2/"
+
+------------------------------
+
+create-dmg \
+--volname "Marked 2.5.4.1" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Marked 2.5.4.1/Marked 2.app/Contents/Resources/AppIcon.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "Marked 2.app" 650 100 \
+--hide-extension "Marked 2.app" \
+--icon "Marked 2 KG.app" 120 400 \
+--hide-extension "Marked 2 KG.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Marked 2.5.4.1 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Marked 2.5.4.1"
+
+------------------------------
+
+create-dmg \
+--volname "Fluid Browser 1.0.6" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Fluid Browser 1.0.6/Fluid Browser.app/Contents/Resources/AppIcon.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "Fluid Browser.app" 650 100 \
+--hide-extension "Fluid Browser.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Fluid Browser 1.0.6 [K'ed].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Fluid Browser 1.0.6"
+
+------------------------------
+
+create-dmg \
+--volname "MacPilot 8.0.6" \
+--volicon "/Users/kiros33/Downloads/0001-Done/MacPilot 8.0.6/MacPilot.app/Contents/Resources/App.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "MacPilot.app" 650 100 \
+--hide-extension "MacPilot.app" \
+--icon "CORE Keygen.app" 120 400 \
+--hide-extension "CORE Keygen.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/MacPilot 8.0.6 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/MacPilot 8.0.6"
+
+------------------------------
+
+create-dmg \
+--volname "iTerm2 2.1.4" \
+--volicon "/Users/kiros33/Downloads/0001-Done/iTerm2 2.1.4/iTerm.app/Contents/Resources/iTerm.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "iTerm.app" 650 100 \
+--hide-extension "iTerm.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/iTerm2 2.1.4.dmg" \
+"/Users/kiros33/Downloads/0001-Done/iTerm2 2.1.4"
+
+------------------------------
+
+create-dmg \
+--volname "Remote Desktop Manager Enterprise 3.5.0.0" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Remote Desktop Manager for Mac Enterprise 3.5.0.0/Remote Desktop Manager.app/Contents/Resources/icon.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "Remote Desktop Manager.app" 650 100 \
+--hide-extension "Remote Desktop Manager.app" \
+--icon "serial.txt" 120 400 \
+--hide-extension "serial.txt" \
+--icon "keygen.exe" 300 400 \
+--hide-extension "keygen.exe" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Remote Desktop Manager Enterprise 3.5.0.0 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Remote Desktop Manager for Mac Enterprise 3.5.0.0"
+
+------------------------------
+
+create-dmg \
+--volname "Screens 3.6.11" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Screens 3.6.11/Screens.app/Contents/Resources/AppIcon.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "Screens.app" 650 100 \
+--hide-extension "Screens.app" \
+--icon "Screens 3.x [SP].app" 120 400 \
+--hide-extension "Screens 3.x [SP].app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Screens 3.6.11 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Screens 3.6.11"
+
+------------------------------
+
+create-dmg \
+--volname "Gemini 1.5.15" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Gemini 1.5.15/MacPaw Gemini.app/Contents/Resources/APP.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "MacPaw Gemini.app" 650 100 \
+--hide-extension "MacPaw Gemini.app" \
+--icon "CORE Keygen.app" 120 400 \
+--hide-extension "CORE Keygen.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Gemini 1.5.15 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Gemini 1.5.15"
+
+------------------------------
+
+create-dmg \
+--volname "FILERECOVERY 2016 Enterprise 5.5.8.5" \
+--volicon "/Users/kiros33/Downloads/0001-Done/FILERECOVERY 2016 5.5.8.5/FILERECOVERY 2016 Enterprise.app/Contents/Resources/appicon.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "FILERECOVERY 2016 Enterprise.app" 650 100 \
+--hide-extension "FILERECOVERY 2016 Enterprise.app" \
+--icon "Instructions.txt" 120 400 \
+--hide-extension "Instructions.txt" \
+--icon "keygen.exe" 300 400 \
+--hide-extension "keygen.exe" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/FILERECOVERY 2016 Enterprise 5.5.8.5 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/FILERECOVERY 2016 5.5.8.5"
+
+create-dmg \
+--volname "FILERECOVERY Professional 2016 5.5.8.5" \
+--volicon "/Users/kiros33/Downloads/0001-Done/FILERECOVERY 2016 5.5.8.5/FILERECOVERY 2016 Professional.app/Contents/Resources/appicon.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "FILERECOVERY 2016 Professional.app" 650 100 \
+--hide-extension "FILERECOVERY 2016 Professional.app" \
+--icon "Instructions.txt" 120 400 \
+--hide-extension "Instructions.txt" \
+--icon "keygen.exe" 300 400 \
+--hide-extension "keygen.exe" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/FILERECOVERY 2016 Professional 5.5.8.5 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/FILERECOVERY 2016 5.5.8.5"
+
+------------------------------
+
+create-dmg \
+--volname "Default Folder X 5.0.2" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Default Folder X 5.0.2/Default Folder X.app/Contents/Resources/Default Folder X.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "Default Folder X.app" 650 100 \
+--hide-extension "Default Folder X.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Default Folder X 5.0.2 [K'ed].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Default Folder X 5.0.2"
+
+------------------------------
+
+create-dmg \
+--volname "Loopback 1.0.2" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Loopback 1.0.2/Loopback.app/Contents/Resources/appIcon.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "Loopback.app" 650 100 \
+--hide-extension "Loopback.app" \
+--icon "CORE Keygen.app" 120 400 \
+--hide-extension "CORE Keygen.app" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/Loopback 1.0.2 [K'ed].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Loopback 1.0.2"
+
+------------------------------
+
+create-dmg \
+--volname "VMware Fusion 8.1.1" \
+--volicon "/Users/kiros33/Downloads/0001-Done/VMware Fusion 8.1.1/VMware Fusion.app/Contents/Resources/fusion.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "VMware Fusion.app" 650 100 \
+--hide-extension "VMware Fusion.app" \
+--icon "VMware Pro 8 [K]" 120 400 \
+--hide-extension "VMware Pro 8 [K]" \
+--icon "unlocker208.zip" 300 400 \
+--hide-extension "unlocker208.zip" \
+--app-drop-link 650 400 \
+"${HOME}/Downloads/VMware Fusion 8.1.1 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/VMware Fusion 8.1.1"
+
+------------------------------
+
+create-dmg \
+--volname "Little Snitch 3.6.3" \
+--volicon "/Users/kiros33/Downloads/0001-Done/Little Snitch 3.6.3/Little Snitch Installer.app/Contents/Resources/Little Snitch Installer.icns" \
+--background "${HOME}/Downloads/0000-DMG/background/background-now.png" \
+--window-pos 200 120 \
+--window-size 800 550 \
+--icon-size 100 \
+--icon "serial.txt" 650 100 \
+--hide-extension "serial.txt" \
+--icon "Little Snitch Installer.app" 300 400 \
+--hide-extension "Little Snitch Installer.app" \
+--icon "Little Snitch Uninstaller.app" 120 400 \
+--hide-extension "Little Snitch Uninstaller.app" \
+"${HOME}/Downloads/Little Snitch 3.6.3 [K].dmg" \
+"/Users/kiros33/Downloads/0001-Done/Little Snitch 3.6.3"
+
